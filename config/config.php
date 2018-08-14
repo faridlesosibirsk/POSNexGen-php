@@ -1,6 +1,4 @@
-
 <?php
-
 return [
     'id' => 'micro-app',
     // basePath (базовый путь) приложения будет каталог `micro-app`
@@ -10,14 +8,5 @@ return [
     // установим псевдоним '@micro', чтобы включить автозагрузку классов из пространства имен 'micro'
     'aliases' => [
         '@micro' => __DIR__,
-    ],
-    'components' => [
-        'db' => [
-            'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=example',
-            'username' => 'root',
-            'password' => '1234',
-            'charset' => 'utf8',
-        ],
     ],
 ];
